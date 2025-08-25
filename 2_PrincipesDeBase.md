@@ -27,6 +27,7 @@ Si une couche est contournée (ex. mot de passe deviné), une autre prend le rel
 ![onion](img/dip1.png)
 
 La pile OSI peut guider les considérations de protections
+
 ![onion](img/osi.webp)
 ## Prévention, détection, et correction ##
 Un système bien sécurisé se doit d'avoir des mécanismes de prévention, de détection et de correction en place.
