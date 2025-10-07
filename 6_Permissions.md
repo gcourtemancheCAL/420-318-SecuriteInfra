@@ -1,7 +1,9 @@
 # Contrôle des permissions
 ## UGO
 **U**ser : Les permissions dont dispose l'utilisateur propriétaire. 
+
 **G**roup : Les permissions dont disposent les utilisateurs qui ne sont pas propriétaire, mais qui font partie du groupe propriétaire.
+
 **O**thers : Les permissions pour tous les autres utilisateurs.
 
 ### Précisions
@@ -25,6 +27,7 @@ L'inode d'un fichier contient l'attribut `st_mode` ou `stx_mode`. Cet attribut e
 | **S_IFDIR**  | 0040000 | directory                            |
 | **S_IFCHR**  | 0020000 | character device                     |
 | **S_IFIFO**  | 0010000 | FIFO                                 |
+
 **Notez que les masques/valeurs sont écrites en octal.**
 
 Plus précisément : 
@@ -69,9 +72,9 @@ Pour installer : `apt install acl`
 
 `getfacl fichier/dossier` : Liste l'ensemble des permissions sur un dossier.
 
-![[img/facl1.png]]
+![facl1](img/facl1.png)
 Le dossier ci-dessus appartient a root:root et a l'équivalent des permissions 755. Cependant, une exemption existe pour l'utilisateur test. Cet utilisateur à tous les droits.
-![[img/facl2.png]]
+![facl2](img/facl2.png)
 On voit ici le même fichier, mais cette fois ci on a retiré toutes les permissions à test109. 
 
 Le tableau ci-dessous illustre les permissions effectives :
